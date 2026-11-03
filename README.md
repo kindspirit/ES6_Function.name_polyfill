@@ -18,7 +18,7 @@ Date.bind().name // 'bound Date'
 
 Object.getOwnPropertyDescriptor(Date, 'name') // {value: 'Date', writable: false, enumerable: false, configurable: true}
 
-Less than 1.2K minified
+Less than 1.3K minified
 
 ```
 
@@ -29,5 +29,6 @@ To mimic ES6 behavior, I had to monkey patch the following methods:
 * `Object.getOwnPropertyDescriptor()`
 * `Object.defineProperty()`
 * `Object.defineProperties()`
+* `Object.preventExtensions()`
 * `Object.prototype.hasOwnProperty()`
 * `Function.prototype.bind()`
