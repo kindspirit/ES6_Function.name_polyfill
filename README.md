@@ -25,11 +25,11 @@ Less than 1.3K minified
 # Caveat:
 In ES6 `delete Date.name` would result in the name being deleted. In this polyfill if it is configurable `delete Date.name` returns true and the name just goes back to the original name of 'Date'.
 
-To mimic ES6 behavior, I had to monkey patch the following methods:
+To mimic ES6 behavior of functions having an own 'name' property, I had to monkey patch the following methods:
 * `Object.getOwnPropertyDescriptor()`
 * `Object.getOwnPropertyNames()`
 * `Object.defineProperty()`
 * `Object.defineProperties()`
 * `Object.preventExtensions()`
 * `Object.prototype.hasOwnProperty()`
-* `Function.prototype.bind()`
+* `Function.prototype.bind()` (to add 'bound ' prefix)
