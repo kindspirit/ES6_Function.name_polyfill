@@ -16,7 +16,7 @@ Date.name // 'Date'
 
 Date.bind().name // 'bound Date'
 
-Object.getOwnPropertyDescriptor(Date, 'name') // {value: 'Date', writable: false, enumerable: false, configurable: true}
+Object.getOwnPropertyDescriptor(Date,'name')//{value:'Date',writable:false,enumerable:false,configurable:true}
 
 Less than 1.3K minified
 
