@@ -18,7 +18,7 @@ Date.bind().name // 'bound Date'
 
 Object.getOwnPropertyDescriptor(Date, 'name') // {value: 'Date', writable: false, enumerable: false, configurable: true}
 
-Less than 1.3K minified
+Less than 1.4K minified
 
 ```
 
@@ -27,6 +27,7 @@ In ES6 `delete Date.name` would result in the name being deleted. In this polyfi
 
 To mimic ES6 behavior, I had to monkey patch the following methods:
 * `Object.getOwnPropertyDescriptor()`
+* `Object.getOwnPropertyNames()`
 * `Object.defineProperty()`
 * `Object.defineProperties()`
 * `Object.preventExtensions()`
