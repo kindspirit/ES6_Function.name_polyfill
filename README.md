@@ -3,7 +3,7 @@ As an exercise I made this polyfill for ES6'S [Function: name](https://developer
 
 # Other polyfills:
 ```
-Date.name // 'name'
+Date.name // 'Date'
 
 Date.bind().name // ''
 
@@ -12,7 +12,7 @@ Object.getOwnPropertyDescriptor(Date, 'name') // undefined
 
 # This polyfill:
 ```
-Date.name // 'name'
+Date.name // 'Date'
 
 Date.bind().name // 'bound Date'
 
